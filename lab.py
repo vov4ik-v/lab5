@@ -70,7 +70,7 @@ class FlowerShop:
             self.list_of_flowers_in_shop.remove(flower)
 
     def __str__(self):
-        return flower in self.list_of_flowers_in_shop
+        return "\n".join(str(flower) for flower in self.list_of_flowers_in_shop)
 
 
 class Bouquet:
