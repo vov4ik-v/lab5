@@ -65,7 +65,7 @@ class FlowerShop:
         sorted_list = sorted(self.list_of_flowers_in_shop, key=lambda flower: flower.get_price(), reverse=True)
         return sorted_list
 
-    def delete_flower_to_shop(self, flower):
+    def delete_flower_from_shop(self, flower):
         if flower in self.list_of_flowers_in_shop:
             self.list_of_flowers_in_shop.remove(flower)
 
